@@ -82,7 +82,7 @@ body.darkMode .container {
     position: relative;
     box-sizing: border-box;
     transition: 1s;
-    background: url(../image/colorrr.png);
+    background: url(../images/colorrr.png);
     background-size: contain;
 }
 
