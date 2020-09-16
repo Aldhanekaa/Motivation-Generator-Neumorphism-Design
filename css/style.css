@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Baloo+Tammudu+2:wght@500&display=swap');
+
+:root {
+    --white: #fff;
+    --main-color: #ecf0f3;
+    --gray: #cbced1;
+    --Montserrat: 'Montserrat', sans-serif;
+    --normal-color: #555;
+    --Gray: rgba(255, 255, 255, 0.5);
+
+    --Dark-Mode-Bg: #091921;
+    --Black: rgba(70, 70, 70, 0.12);
+    --BLACK: rgba(0, 0, 0, 0.3);
+    --GRAY: rgba(131, 131, 131, 0.5);
+    --GRAy: rgba(255, 255, 255, 0.05)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: var(--normal-color);
+    background-color: var(--main-color);
+    transition: .1s;
+}
+
+body.darkMode .newQuote {
+    background: var(--Dark-Mode-Bg);
+}
+
+body.darkMode {
+    color: var(--white);
+    background: var(--Dark-Mode-Bg);
+}
+
+body.darkMode .card {
+    box-shadow: -4px -4px 15px var(--GRAy),
+        0px 15px 15px var(--BLACK);
+    background: var(--Dark-Mode-Bg);
+}
+
+body.darkMode .share_button {
+    color: var(--white);
+    box-shadow: -2.5px -2.5px 4px var(--GRAy),
+        2.5px 2.5px 4px var(--BLACK);
+}
+
+body.darkMode .share_button:active {
+    box-shadow: -2.5px -2.5px 2px var(--GRAy),
+        2.5px 2.5px 2px var(--BLACK), inset -2px -2px 4px var(--GRAy),
+        inset 2px 2px 4px var(--BLACK);
+}
+
+body.darkMode .newQuote {
+    box-shadow: -2.5px -2.5px 4px var(--GRAy),
+        2.5px 2.5px 4px var(--BLACK);
+    color: var(--white);
+}
+
+body.darkMode .newQuote:active {
+    box-shadow: -2.5px -2.5px 2px var(--GRAy),
+        2.5px 2.5px 2px var(--BLACK), inset -2px -2px 4px var(--GRAy),
+        inset 2px 2px 4px var(--BLACK);
+}
+
+body.darkMode .container {
+    background: var(--Dark-Mode-Bg);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    transition: 1s;
+    background: url(../image/colorrr.png);
+    background-size: contain;
+}
+
+.container.popup {
+    filter: blur(10px);
+    display: flex;
+}
+
+.card {
+    height: auto;
+    background: var(--main-color);
+    border-radius: 20px;
+    box-shadow: 13px 13px 20px var(--gray),
+        -13px -13px 20px var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 25px;
+    -ms-flex-direction: column;
+}
+
+.quote_box {
+    font-family: var(--Montserrat);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.quote_ {
+    display: flex;
+}
+
+.quote {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.author {
+    font-family: 'Baloo Tammudu 2', cursive;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.quotationMarks {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.share-buttons {
+    display: flex;
+}
+
+.share_button {
+    width: 50px;
+    height: 50px;
+    box-shadow: -2.5px -2.5px 4px var(--Gray),
+        2.5px 2.5px 4px rgba(70, 70, 70, 0.12);
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #1DA1F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.share_button:first-child {
+    color: #0390e7;
+}
+
+.share_button:not(:first-child) {
+    margin-left: 15px;
+}
+
+.share_button:active {
+    box-shadow: -2.5px -2.5px 2px var(--Gray),
+        2.5px 2.5px 2px rgba(70, 70, 70, 0.12), inset -2px -2px 4px var(--Gray),
+        inset 2px 2px 4px rgba(70, 70, 70, 0.12);
+}
+
+.newQuote {
+    width: 100px;
+    height: 50px;
+    box-shadow: -2.5px -2.5px 4px var(--Gray),
+        2.5px 2.5px 4px rgba(70, 70, 70, 0.12);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 10px;
+    color: var(--normal-color);
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0px solid transparent;
+}
+
+.newQuote:active {
+    box-shadow: -2.5px -2.5px 2px var(--Gray),
+        2.5px 2.5px 2px rgba(70, 70, 70, 0.12), inset -2px -2px 4px var(--Gray),
+        inset 2px 2px 4px rgba(70, 70, 70, 0.12);
+}
+
+@media screen and (max-width: 435px) {
+    .share_button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .newQuote {
+        height: 40px;
+        width: 70px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 725px) and (max-width: 899px) {
+    .quotationMarks {
+        font-size: 30px;
+    }
+
+    .quote {
+        font-size: 22.5px;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    .buttons {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        width: 60%;
+        height: auto;
+    }
+
+    .newQuote {
+        width: 120px;
+    }
+
+    .quote {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .quotationMarks {
+        font-size: 35px;
+    }
+
+    .buttons {
+        margin-top: 100px;
+    }
+}
+
+.quote.animate {
+    animation: animate 1s forwards;
+}
+
+.author.animate {
+    animation: animate 1s forwards;
+}
+
+.quote.animatee {
+    animation: animate2 1s forwards;
+}
+
+.author.animatee {
+    animation: animate2 1s forwards;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animate2 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+body.darkMode .github-corner {
+    fill: #ecf0f3;
+    color: var(--Dark-Mode-Bg);
+}
+
+.github-corner {
+    z-index: 9999999;
+    color: var(--main-color);
+    fill: #151513;
+    position: fixed;
+    top: 0;
+    border: 0;
+    right: 0;
+    transition: .3s;
+}
+
+.github-corner svg {
+    z-index: 9999999;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}

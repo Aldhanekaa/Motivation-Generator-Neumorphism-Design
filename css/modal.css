@@ -1,0 +1,119 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+    overflow: auto;
+}
+
+.swal-overlay {
+    z-index: 999999;
+}
+
+.modal.add {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modal .modalCard.animateA {
+    animation: animasi 3s cubic-bezier(1, -0.23, 0, 1.22) forwards;
+}
+
+.modal .modalCard.remove {
+    animation: animasi2 3s cubic-bezier(1, -0.23, 0, 1.22) forwards;
+}
+
+.modalCard {
+    position: relative;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--main-color);
+    z-index: 99999;
+    border: 3px solid #555;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+body.darkMode .modalCard {
+    border: 3px solid var(--GRAy);
+    background: var(--Dark-Mode-Bg);
+    width: 80%;
+
+}
+
+.modalCard .close-modal {
+    position: absolute;
+    width: 25px;
+    right: 0;
+    top: 0;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+body.popup {
+    overflow: hidden;
+}
+
+.change {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.change p {
+    font-size: 18px;
+}
+
+.title-S {
+    font-size: 30px;
+    text-align: center;
+}
+
+@keyframes animasi {
+    from {
+        margin-top: 1100px;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes animasi2 {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 1100px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .modalCard {
+        width: 40% !important;
+    }
+
+    .modal {
+        padding: 100px;
+        box-sizing: border-box;
+    }
+}
