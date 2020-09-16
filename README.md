@@ -23,9 +23,6 @@ Designed by [Aldhaneka][Aldhaneka] — Programmed by [Aldhaneka][Aldhaneka]
 
 ## Getting Started
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/QTN5vq0X24Q" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
 ### Introduction
 Hello There, I'm Aldhaneka. So I built random quotes generator with JavaScript, and this project is for my School Project.
 
