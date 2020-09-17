@@ -30,13 +30,13 @@ changeQuoteType.addEventListener('click', e => {
 // new Quote button element
 const newQuoteBtn = document.querySelector('.newQuote')
 class quote {
-    constructor(quote, type = 'quotesMotivasiBelajar') {
+    constructor(quote, type) {
         this._quote = quote;
         this.quoteText = document.querySelector('.quote');
         this.authorText = document.querySelector('.author')
         this._type = type;
 
-        this._array = [];
+        this._x = 0;
     }
     get quote() {
         return this._quote;
@@ -53,32 +53,19 @@ class quote {
     getQuote() {
         const array = this._quote[this._type];
         const randomIndex = Math.floor(Math.random() * array.length);
-        console.log(array)
-        console.log(this._type)
-        if (!this._array.includes(randomIndex)) {
-            this._array.push(randomIndex)
-            const {
-                quote,
-                author
-            } = array[randomIndex]
-            twitter.setAttribute('href', `https://twitter.com/intent/tweet?text="${quote}"`)
-            this.quoteText.textContent = quote;
-            this.authorText.textContent = `- ${author}`;
-        } else {
-            if (this._array.length == array.length) {
-                console.log('End Here!')
-                swal("Hmmm Looks like you've reached the end..", "");
-            } else {
-                this.getQuote()
-            }
-        };
+        if (this._x != array.length) {
+            this.quoteText.textContent = array[this._x]
+            this._x++;
+            console.log(this._x)
+        }
     }
 }
 const Quote = new quote(quotes)
+checkTypeOfQuote()
 Quote.getQuote()
 newQuoteBtn.addEventListener('click', () => {
-    Quote.array.length == Quote.quote[Quote.type].length ? swal("Looks like you've reached the end..") : animate();
-
+    Quote._x != Quote._quote[Quote._type].length ?
+        animate() : swal("Hmmm Looks like you've reached the end..", "");;
 })
 
 function animate() {
@@ -142,12 +129,11 @@ function checkTypeOfQuote() {
     if (changeQuoteType.checked) {
         console.log('Checked !')
         Quote.type = 'quotesTentangBullying'
-        Quote._array = []
+        Quote._x = 0;
     } else {
         console.log('UNCHECK :(')
         Quote.type = 'quotesMotivasiBelajar'
-        Quote._array = []
-
+        Quote._x = 0;
     }
 }
 
