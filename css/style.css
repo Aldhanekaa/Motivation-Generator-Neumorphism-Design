@@ -82,8 +82,12 @@ body.darkMode .container {
     position: relative;
     box-sizing: border-box;
     transition: 1s;
-    background: url(../images/colorrr.png);
+    background: url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg);
     background-size: contain;
+}
+
+.container.bullying {
+    background: url(https://d12jofbmgge65s.cloudfront.net/blog/wp-content/uploads/2017/03/History_of_Cyberbullying_Soc_TW.jpg);
 }
 
 .container.popup {
@@ -95,8 +99,8 @@ body.darkMode .container {
     height: auto;
     background: var(--main-color);
     border-radius: 20px;
-    box-shadow: 13px 13px 20px var(--gray),
-        -13px -13px 20px var(--white);
+    /* box-shadow: 13px 13px 20px var(--gray),
+        -13px -13px 20px var(--white); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

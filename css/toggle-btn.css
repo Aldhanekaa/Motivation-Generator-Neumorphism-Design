@@ -14,11 +14,12 @@ footer .settings-btn {
     width: 50px;
     margin-left: 10px;
     margin-bottom: 10px;
-    box-shadow: -4.5px -4.5px 4px rgba(255, 255, 255, 0.5),
-        4.5px 4.5px 4px rgba(70, 70, 70, 0.12);
+    /* box-shadow: -4.5px -4.5px 4px rgba(255, 255, 255, 0.5),
+        4.5px 4.5px 4px rgba(70, 70, 70, 0.12); */
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 25px;
+    background: var(--main-color);
     color: rgba(131, 131, 131, 0.5);
     display: flex;
     justify-content: center;
@@ -37,11 +38,11 @@ body.darkMode .settings-btn:active {
         inset 2px 2px 4px var(--BLACK);
 }
 
-footer .settings-btn:active {
+/* footer .settings-btn:active {
     box-shadow: -4.5px -4.5px 4px rgba(255, 255, 255, 0.5),
         4.5px 4.5px 4px rgba(70, 70, 70, 0.12), inset -2px -2px 4px rgba(255, 255, 255, 0.5),
         inset 2px 2px 4px rgba(70, 70, 70, 0.12);
-}
+} */
 
 
 
