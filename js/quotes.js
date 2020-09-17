@@ -19,7 +19,7 @@ export const quotes = {
         // }
     ],
 
-    'quotesTentangBullying': ['Have you ever been bullied?', 'It doesn\'t sound good.', 'However behind the side of people who bully you, maybe he is someone who has problems with his life.', 'Or Those who bully you, are actually jealous of what you have.', 'Maybe those who bully you can embarrass you now, however I believe you can embarrass him in the next day.', '#Palestinian\'s Lives Matter']
+    'quotesTentangBullying': ['Have you ever been bullied?', 'It doesn\'t sound good.', 'However behind the side of people who bully you, maybe he is someone who has problems with his life.', 'Or Those who bully you, are actually jealous of what you have.', 'Maybe those who bully you can embarrass you now, however I believe you can embarrass him in the next day.']
     // {
     //     quote: 'Maybe now you can embarrass him, however in the next they he could embarrass you.',
     //     author: 'Aldhaneka'
