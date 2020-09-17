@@ -66,7 +66,7 @@ class quote {
             this.authorText.textContent = `- ${author}`;
         } else {
             if (this._array.length == array.length) {
-                console.log('berakhir disini!')
+                console.log('End Here!')
                 swal("Hmmm Looks like you've reached the end..", "");
             } else {
                 this.getQuote()
@@ -139,9 +139,8 @@ function checkDarkMode() {
 }
 
 function checkTypeOfQuote() {
-
     if (changeQuoteType.checked) {
-        console.log('DI CEK!')
+        console.log('Checked !')
         Quote.type = 'quotesTentangBullying'
         Quote._array = []
     } else {
