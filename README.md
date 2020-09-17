@@ -12,7 +12,6 @@ Designed by [Aldhaneka][Aldhaneka] — Programmed by [Aldhaneka][Aldhaneka]
   <summary markdown="span">Table of Contents</summary>
 
   ### Table of Contents
-  ---
   - [Getting Started](#getting-started)
     - [Introduction](#introduction)
     - [Features](#features)

@@ -57,8 +57,10 @@ class quote {
         console.log(this._type)
         if (!this._array.includes(randomIndex)) {
             this._array.push(randomIndex)
-            const quote = array[randomIndex].quote;
-            const author = array[randomIndex].author;
+            const {
+                quote,
+                author
+            } = array[randomIndex]
             twitter.setAttribute('href', `https://twitter.com/intent/tweet?text="${quote}"`)
             this.quoteText.textContent = quote;
             this.authorText.textContent = `- ${author}`;
