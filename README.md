@@ -40,7 +40,7 @@ This project is fill of my Quotes, not from famous people.
 Babel Package 
 
 ### Issues
-Not completely responsive
+Not responsive
 
 ---
 Built with love by Aldhaneka
