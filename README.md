@@ -15,6 +15,8 @@ Designed by [Aldhaneka][Aldhaneka] — Programmed by [Aldhaneka][Aldhaneka]
   - [Getting Started](#getting-started)
     - [Introduction](#introduction)
     - [Features](#features)
+    - [Reference](#Reference)
+    - [Issues](#Issues)
 </details>
 
 ---
