@@ -4,7 +4,7 @@
 
 JavaScript Motivation Generator showcases Project — With Neumorphism design, clean, and Simple 
 
- Random Quotes Generator without API
+Motivation Quotes Generator without API
 
 Designed by [Aldhaneka][Aldhaneka] — Programmed by [Aldhaneka][Aldhaneka]
 
