@@ -23,8 +23,9 @@ const changeQuoteType = document.querySelector('#changeQuoteType')
 const twitter = document.getElementById('twitter')
 changeQuoteType.addEventListener('click', e => {
     swal("Change Was Saved", "Success to change the type of the quote!", "success");
-
-})
+});
+const darkModeBtn = document.getElementById('darkMode')
+console.log(darkModeBtn.checked ? true : false)
 
 
 // new Quote button element
@@ -105,35 +106,52 @@ changeModeCheckbox.forEach(e => {
             console.log(e.target.checked)
             console.log(e.target.value)
             const b = e.target.nextElementSibling;
-            checkDarkMode()
-            checkTypeOfQuote()
+            checkDarkMode();
+            checkTypeOfQuote();
+            checkDarkModeLocalStorage()
             if (e.target.checked) {
-                b.classList.toggle('active')
+                b.classList.add('active')
             } else {
-                b.classList.remove('active')
+                b.classList.remove('active');
             }
         }
     })
 })
 
 function checkDarkMode() {
-    const darkModeBtn = document.getElementById('darkMode')
     if (darkModeBtn.checked) {
-        document.body.classList.add('darkMode')
+        localStorage.setItem('Mode', 'Dark');
+        document.body.classList.add('darkMode');
     } else {
-        document.body.classList.remove('darkMode')
+        localStorage.setItem('Mode', 'Light');
+        document.body.classList.remove('darkMode');
     }
 }
+
+function checkDarkModeLocalStorage() {
+    const dmT = document.querySelector('#darkModeToggle')
+    if (localStorage.getItem('Mode') == 'Dark') {
+        document.body.classList.add('darkMode');
+        dmT.classList.add('active');
+    } else if (localStorage.getItem('Mode') == 'Light') {
+        document.body.classList.remove('darkMode')
+        dmT.classList.remove('active');
+    }
+}
+checkDarkModeLocalStorage();
 
 function checkTypeOfQuote() {
     if (changeQuoteType.checked) {
         console.log('Checked !')
         Quote.type = 'quotesTentangBullying'
         Quote._x = 0;
+        checkDarkModeLocalStorage();
     } else {
-        console.log('UNCHECK :(')
-        Quote.type = 'quotesMotivasiBelajar'
+        console.log('UNCHECK :(');
+        Quote.type = 'quotesMotivasiBelajar';
         Quote._x = 0;
+        checkDarkModeLocalStorage();
+
     }
 }
 
