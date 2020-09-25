@@ -19,7 +19,11 @@ const modalCard = modal.querySelector('.modalCard')
 
 const changeModeCheckbox = document.querySelectorAll('.change')
 const checkbox = document.querySelectorAll('.toggle')
-const changeQuoteType = document.querySelector('#changeQuoteType')
+const changeQuoteType = document.querySelector('#changeQuoteType');
+
+// for bg
+const CONTAINER = document.querySelector('.container')
+
 const twitter = document.getElementById('twitter')
 changeQuoteType.addEventListener('click', e => {
     swal("Change Was Saved", "Success to change the type of the quote!", "success");
@@ -146,12 +150,12 @@ function checkTypeOfQuote() {
         Quote.type = 'quotesTentangBullying'
         Quote._x = 0;
         checkDarkModeLocalStorage();
+
     } else {
         console.log('UNCHECK :(');
         Quote.type = 'quotesMotivasiBelajar';
         Quote._x = 0;
         checkDarkModeLocalStorage();
-
     }
 }
 

@@ -1,10 +1,10 @@
 
 ![Semantic description of image](images/preview.png "Preview")
-# Random-Quotes-Generator-Neumorphism-Design
+# Motivation-Generator-Neumorphism-Design
 
-JavaScript Random Quotes Generator showcases Project — With Neumorphism design, clean, and Simple 
+JavaScript Motivation Generator showcases Project — With Neumorphism design, clean, and Simple 
 
- Random Quotes Generator without API
+Motivation Quotes Generator without API
 
 Designed by [Aldhaneka][Aldhaneka] — Programmed by [Aldhaneka][Aldhaneka]
 
@@ -25,7 +25,7 @@ Designed by [Aldhaneka][Aldhaneka] — Programmed by [Aldhaneka][Aldhaneka]
 ## Getting Started
 
 ### Introduction
-Hello There, I'm Aldhaneka. So I built random quotes generator with JavaScript, and this project is for my School Project.
+Hello There, I'm Aldhaneka. So I built Motivation generator with JavaScript, and this project is for my School Project.
 
 This project is fill of my Quotes, not from famous people.
 
@@ -40,7 +40,7 @@ This project is fill of my Quotes, not from famous people.
 Babel Package 
 
 ### Issues
-Not completely responsive
+Not responsive
 
 ---
 Built with love by Aldhaneka
